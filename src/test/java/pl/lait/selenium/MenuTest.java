@@ -26,13 +26,17 @@ public class MenuTest {
 		Init.log("klikam w link sign-on");
 		driver.findElement(By.linkText("SIGN-ON")).click();	
 		Init.log(driver.getTitle());
+		driver.findElement(By.name("userName")).sendKeys("pawel8732");
+		driver.findElement(By.name("password")).sendKeys("asdzxc");
+		driver.findElement(By.name("login")).click();	
 		Init.sleep(3);
+
 	}
 	
 	@After
 	public void awter() {
 		//zamykanie przegladarki po tescie
-		Init.close();
+		//Init.close();
 		
 	}
 
