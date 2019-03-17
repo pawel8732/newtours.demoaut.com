@@ -10,9 +10,13 @@ public class Init {
 	public static WebDriver getDriver() {
 		
 		System.setProperty("webdriver.chrome.driver", "D:\\Kurs\\chromedriver_win32\\chromedriver.exe");
-		driver = new ChromeDriver();
-		driver.get("http://newtours.demoaut.com");		
-		return driver;
+		if(driver == null) {
+			driver = new ChromeDriver();
+			driver.get("http://newtours.demoaut.com");
+			return driver;
+		} else {
+			return driver;
+		}
 		
 	}
 	public static void log(String msg) {
@@ -20,6 +24,7 @@ public class Init {
 	}
 	public static void close() {
 		driver.close();
+		driver = null;
 	}
 	public static void sleep(int seconds) {
 		try {
