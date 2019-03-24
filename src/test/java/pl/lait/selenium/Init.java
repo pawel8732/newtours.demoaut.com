@@ -24,7 +24,6 @@ public class Init {
 			e.printStackTrace();
 		}
 		DesiredCapabilities cap = DesiredCapabilities.chrome();
-		cap.setPlatform(Platform.WIN10);
 		
 		System.setProperty("webdriver.chrome.driver", "D:\\Kurs\\chromedriver_win32\\chromedriver.exe");
 		if(driver == null) {
