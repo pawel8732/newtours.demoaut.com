@@ -1,0 +1,8 @@
+pl\lait\pageObjects\ReservationPage.class
+pl\lait\Steps\Test.class
+pl\lait\selenium\MenuTest.class
+pl\lait\selenium\LoginTest.class
+pl\lait\pageObjects\LoginPage.class
+pl\lait\selenium\Init.class
+pl\lait\Steps\LoginPageStepDefs.class
+pl\lait\pageObjects\Reservation2_3Page.class
